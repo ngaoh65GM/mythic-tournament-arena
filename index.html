@@ -9,8 +9,8 @@
 
 /* Achievement UI */
 .achievement-stats{display:flex;flex-wrap:wrap;gap:4px;margin-top:7px;font-size:10px;color:#aeb9cf}.achievement-stats span{padding:3px 6px;border:1px solid #33405f;border-radius:999px;background:#0b1120}.achievement-stats .ach-win{color:#8ff0c7}.achievement-stats .ach-loss{color:#ff9b9b}.achievement-rank,.team-achievement{margin-top:5px;font-size:12px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}.stars{letter-spacing:1px;color:#ffd86b}.throne-icon{font-weight:800;color:#f5d77a;text-shadow:0 0 8px #f5d77a88}.mythic-rank{padding:4px 7px;border-radius:8px;border:1px solid transparent;animation:mythicGlow 2s linear infinite}.mythic-title{font-weight:900;letter-spacing:1.5px;background:linear-gradient(90deg,#ff4f9a,#ffd166,#74e89c,#45d6ff,#c6a7ff,#ff4f9a);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:mythicRainbow 3s linear infinite;text-shadow:0 0 12px #ffffff44}.mythic-rank::before{content:"";color:#ffd166}@keyframes mythicRainbow{to{background-position:300% 0}}@keyframes mythicGlow{0%,100%{box-shadow:0 0 5px #45d6ff55;border-color:#45d6ff66}33%{box-shadow:0 0 9px #ff4f9a66;border-color:#ff4f9a66}66%{box-shadow:0 0 9px #ffd16666;border-color:#ffd16666}}
-.character-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.character-gallery .character-card-wrap{padding:7px!important}.character-gallery .generated-portrait{width:56px;max-width:56px;margin:0 auto 5px;aspect-ratio:1/1;border-radius:9px}.character-gallery .team-logo-badge{width:32px;height:32px;right:7px;top:7px;border-radius:8px}.character-gallery .team-logo-badge span{font-size:14px!important}.character-gallery .btn.small{padding:5px 7px;font-size:10px}.character-gallery .small{font-size:10px}.character-gallery .player-name{font-size:13px}.character-gallery .achievement-stats{font-size:9px;gap:3px}.character-gallery .achievement-stats span{padding:2px 4px}.character-gallery .achievement-rank{font-size:10px}.character-gallery .stars{letter-spacing:0}.team-achievement{padding-top:5px;border-top:1px solid var(--line)}
-@media(max-width:360px){.character-gallery .generated-portrait{width:48px;max-width:48px}.character-gallery .achievement-stats span{font-size:8px}}
+.character-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.character-gallery .character-card-wrap{padding:7px!important}.character-gallery .generated-portrait{width:34px;max-width:34px;margin:0 auto 5px;aspect-ratio:1/1;border-radius:9px}.character-gallery .team-logo-badge{width:32px;height:32px;right:7px;top:7px;border-radius:8px}.character-gallery .team-logo-badge span{font-size:14px!important}.character-gallery .btn.small{padding:5px 7px;font-size:10px}.character-gallery .small{font-size:10px}.character-gallery .player-name{font-size:13px}.character-gallery .achievement-stats{font-size:9px;gap:3px}.character-gallery .achievement-stats span{padding:2px 4px}.character-gallery .achievement-rank{font-size:10px}.character-gallery .stars{letter-spacing:0}.team-achievement{padding-top:5px;border-top:1px solid var(--line)}
+@media(max-width:360px){.character-gallery .generated-portrait{width:30px;max-width:30px}.character-gallery .achievement-stats span{font-size:8px}}
 </style><style>
 :root{--bg:#080b14;--panel:#111727;--panel2:#171e31;--line:#29334c;--text:#eef3ff;--muted:#9aa8c4;--accent:#7c5cff;--accent2:#19d3ae;--danger:#ff5d73;--gold:#ffd166}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0,#1a1740 0,transparent 35%),radial-gradient(circle at 90% 20%,#102f3b 0,transparent 30%),var(--bg);color:var(--text);font:14px/1.45 Inter,system-ui,sans-serif}
@@ -49,7 +49,7 @@ main{max-width:1400px;margin:auto;padding:22px}.page{display:none}.page.active{d
 .generated-portrait{width:100%;aspect-ratio:4/5;border:1px solid #4a4e76;border-radius:14px;overflow:hidden;background:#10162a;box-shadow:inset 0 0 35px #0008}
 .generated-portrait svg{width:100%;height:100%;display:block}
 .character-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}.character-card-wrap{position:relative}
-.character-gallery .generated-portrait{width:50%;margin:0 auto 8px;aspect-ratio:4/5}
+.character-gallery .generated-portrait{width:34px;max-width:34px;margin:0 auto 8px;aspect-ratio:4/5}
 .team-kick-row{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 0;border-bottom:1px solid var(--line)}
 .team-kick-row:last-child{border-bottom:0}
 .team-logo-badge{position:absolute;right:12px;top:12px;width:58px;height:58px;border-radius:14px;border:1px solid #7b86ad;background:#0a1020dd;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 8px 18px #0008;z-index:3}.team-logo-badge img,.team-logo-badge svg{width:100%;height:100%;object-fit:cover}.team-logo-small{width:46px;height:46px;border-radius:10px;border:1px solid #596487;object-fit:cover;background:#0a1020}.leaderboard-row{display:grid;grid-template-columns:42px 1fr auto;gap:12px;align-items:center;padding:10px;border-bottom:1px solid var(--line)}.leaderboard-row:last-child{border-bottom:0}.leaderboard-rank{font-weight:900;font-size:18px;color:#9ca9c8}
@@ -70,7 +70,7 @@ main{max-width:1400px;margin:auto;padding:22px}.page{display:none}.page.active{d
 <body class="anime-bg">
 <header>
   <h1>⚔️ Mythic Tournament Arena</h1>
-  <div class="sub">Character registration • 4 / 6 / 8 / 10-team tournaments • automatic race stats • bracket & points</div>
+  <div class="sub">Character registration • 4 / 6 / 8 / 10-team tournaments • automatic player progression • bracket & points</div>
   <nav>
     <button class="tab active" data-page="dashboard">Dashboard</button>
     <button class="tab" data-page="characters">Characters</button>
@@ -85,7 +85,7 @@ main{max-width:1400px;margin:auto;padding:22px}.page{display:none}.page.active{d
   <div class="hero-banner">
     <div class="section-kicker">Mythic Tournament Arena</div>
     <div class="hero-title">⚔️ Enter the Anime Fantasy Tournament</div>
-    <p class="hero-copy">Build your own roster from gods, demons, demi-humans, rabbitkin and other races. Customize their powers and weapons, then send your teams into the tournament arena.</p>
+    <p class="hero-copy">Build your own roster with nationality, personality, rank and team assignment, then send your teams into the tournament arena.</p>
     <div class="row" style="margin-top:15px">
       <button class="btn primary" onclick="showPage('characters');openCharacterModal()">＋ Create Character</button>
       <button class="btn" onclick="showPage('tournament')">🏆 Open Tournament</button>
@@ -94,22 +94,22 @@ main{max-width:1400px;margin:auto;padding:22px}.page{display:none}.page.active{d
 
   <div class="character-showcase">
     <div class="character-card demon">
-      <span class="pill tag">Demon</span>
+      <span class="pill tag">Fantasy</span>
       <div class="portrait">😈</div>
       <b>Crimson Demoness</b>
-      <div class="muted">Dark magic • Regeneration • Demon Authority</div>
+      <div class="muted">Unique personality • Rank • Tournament progression</div>
     </div>
     <div class="character-card beast">
-      <span class="pill tag">Demi-Human</span>
+      <span class="pill tag">Fantasy</span>
       <div class="portrait">🐺</div>
       <b>Wildfang Vanguard</b>
-      <div class="muted">Instinct • Physical power • Enhanced senses</div>
+      <div class="muted">Unique personality • Rank • Tournament progression</div>
     </div>
     <div class="character-card rabbit">
-      <span class="pill tag">Rabbitkin</span>
+      <span class="pill tag">Fantasy</span>
       <div class="portrait">🐰</div>
       <b>Moonstep Rabbitkin</b>
-      <div class="muted">Evasion • Extreme agility • Hypersonic movement</div>
+      <div class="muted">Unique personality • Rank • Tournament progression</div>
     </div>
   </div>
 
@@ -144,7 +144,7 @@ main{max-width:1400px;margin:auto;padding:22px}.page{display:none}.page.active{d
 
 <section id="characters" class="page">
   <div class="row between"><div><h2>Character Registry</h2><div class="muted">Characters keep their identity after registration. Personality drives the automatic chibi/portrait art, while team assignment can be changed from the Teams page.</div></div><button class="btn primary" onclick="openCharacterModal()">＋ Register Character</button></div>
-  <div class="card" style="margin-top:14px"><div class="row between"><div><h3>🎨 Automatic Character Illustrations</h3><div class="muted">Every registered character gets a unique generated-style portrait. Existing characters never reuse another character's identity seed.</div></div><span class="auto-art-badge">AUTO ART</span></div><div id="characterGallery" class="character-gallery" style="margin-top:12px"></div></div><div class="card" style="margin-top:14px;overflow:auto"><table class="table"><thead><tr><th>Name / Points</th><th>Gender</th><th>Race</th><th>Age</th><th>Personality</th><th>Power</th><th>Rank</th><th>Mana</th><th>Speed</th><th>Weapon</th><th>Team</th><th></th></tr></thead><tbody id="charTable"></tbody></table></div>
+  <div class="card" style="margin-top:14px"><div class="row between"><div><h3>🎨 Automatic Character Illustrations</h3><div class="muted">Every registered character gets a unique generated-style portrait. Existing characters never reuse another character's identity seed.</div></div><span class="auto-art-badge">AUTO ART</span></div><div class="row" style="margin-top:12px;gap:8px;flex-wrap:wrap"><label style="margin:0">Player Selection / Sort <select id="playerSortMode" onchange="renderCharacterGallery()"><option value="level">Level ↓</option><option value="team">Team → Level ↓</option><option value="point">Points ↓</option></select></label><span class="small muted">Sort player berdasarkan Level, Team atau Player Points.</span></div><div id="characterGallery" class="character-gallery" style="margin-top:12px"></div></div><div class="card" style="margin-top:14px;overflow:auto"><table class="table"><thead><tr><th>Name / Points</th><th>Gender</th><th>Nationality</th><th>Age</th><th>Personality</th><th>Rank</th><th>Team</th><th></th></tr></thead><tbody id="charTable"></tbody></table></div>
 </section>
 
 <section id="teams" class="page">
@@ -205,7 +205,7 @@ main{max-width:1400px;margin:auto;padding:22px}.page{display:none}.page.active{d
     <h2>✏️ Edit Team</h2>
     <button class="btn" onclick="closeTeamEdit()">✕</button>
   </div>
-  <div class="notice">You can edit the <b>team</b> and its members here. Use Edit Character from the Characters page to change race, age, power, mana, personality and other character details.</div>
+  <div class="notice">You can edit the <b>team</b> and its members here. Use Edit Character from the Characters page to change nationality, age, personality, rank and other character details.</div>
   <input type="hidden" id="editTeamId">
   <label>Team Name</label>
   <input id="editTeamName" placeholder="Team name">
@@ -224,29 +224,18 @@ main{max-width:1400px;margin:auto;padding:22px}.page{display:none}.page.active{d
 <div id="modal" class="modal"><div class="modalbox">
   <div class="row between"><h2 id="characterModalTitle">Register Character</h2><button class="btn" onclick="closeModal()">✕</button></div>
   <input type="hidden" id="editingCharacterId">
-  <div class="notice">Only races unlocked by the current Player Points are shown for a new character. New players start with Human, Rabbitkin, Golem, Dwarf and Orge. Every 2 recorded wins gives the character/player 1 point. Race access is checked again whenever you edit a character.<br><br><b>Player Points: <span id="fPoints">0</span></b><br><br>Choose a race to auto-fill the suggested <b>power, rank tier, mana capacity and speed</b>. Turn off Auto Fill to customize them.</div>
-  <div class="row"><label style="margin:0"><input id="autoFill" type="checkbox" checked style="width:auto"> Auto-fill from race</label></div>
+  <div class="notice">Setiap player boleh menggunakan nama sendiri atau tekan <b>✨ Generate Name</b> untuk mendapatkan nama unik secara automatik. Level player tidak diisi manual; ia dikira daripada jumlah <b>Champion</b>. <br><br><b>Level System:</b> LV 1 → LV 2 memerlukan 2× Champion. LV 2 → LV 3 memerlukan 3× Champion selepas level up. Selepas itu, keperluan Champion digandakan setiap level. Maximum LV 50.</div>
   <div class="formgrid">
-    <div><label>Name</label><input id="fName" placeholder="Character name"></div>
+    <div class="fullcol"><label>Name</label><div class="row" style="align-items:stretch"><input id="fName" placeholder="Character name" style="flex:1"><button type="button" class="btn" onclick="generateCharacterName()">✨ Generate Name</button></div><div class="small muted" style="margin-top:5px">Nama auto-generated boleh diganti dengan nama pilihan anda sendiri.</div></div>
     <div><label>Gender</label><select id="fGender"><option>Female</option><option>Male</option><option>Unknown</option></select></div>
-    <div><label>Race</label><select id="fRace"></select></div>
+    <div class="fullcol"><label>Nationality / Country</label><input id="fNationality" list="nationalityList" placeholder="Search country or nationality" autocomplete="off"><datalist id="nationalityList"></datalist><div class="small muted" style="margin-top:5px">Taip untuk search negara anda, atau pilih daripada senarai.</div></div>
     <div><label>Age</label><select id="fAge"><option>Child</option><option>Young</option><option>Adult</option><option>Mature</option><option>Ancient</option><option>Primordial</option><option>250</option><option>500</option><option>1000+</option></select></div>
     <div><label>Personality</label><select id="fPersonality"><option>Brave</option><option>Calm</option><option>Cheerful</option><option>Mysterious</option><option>Playful</option><option>Serious</option><option>Shy</option><option>Fierce</option><option>Elegant</option><option>Chaotic</option></select></div>
-    <div><label>Power</label><select id="fPower"><option>Low</option><option>Medium</option><option>High</option><option>Very High</option><option>Transcendent</option><option>Extreme</option><option>Divine</option><option>Infinite</option></select></div>
     <div><label>Rank tier</label><select id="fRank"></select></div>
-    <div><label>Mana capacity</label><select id="fMana"><option>None</option><option>Low</option><option>Medium</option><option>High</option><option>Very High</option><option>Transcendent</option><option>Eternal</option><option>Infinite</option></select></div>
-    <div><label>Speed</label><select id="fSpeed"></select></div>
-    <div>
-  <label>Weapon</label>
-  <div class="row" style="align-items:stretch">
-    <select id="fWeapon" style="flex:1"></select>
-    <button type="button" class="btn" onclick="randomWeapon()">🎲 Random</button>
-  </div>
-  <div class="small muted" style="margin-top:5px">Choose a weapon manually or press Random.</div>
-</div>
     <div><label>Team</label><select id="fTeam"></select></div>
-    <div class="fullcol card" style="padding:12px"><div class="row between"><b>🎨 Automatic Character Illustration</b><span class="auto-art-badge">UNIQUE ART</span></div><div class="small muted">Portrait and chibi art automatically follow the selected race, gender, weapon and personality. Registered characters keep their own deterministic identity.</div><div id="livePortrait" class="generated-portrait" style="margin-top:10px"></div></div><div class="fullcol row" style="justify-content:flex-end;margin-top:8px"><button class="btn" onclick="closeModal()">Cancel</button><button class="btn primary" onclick="saveCharacter()">Save Character</button></div>
+    <div class="fullcol card" style="padding:12px"><div class="row between"><b>🎨 Automatic Character Illustration</b><span class="auto-art-badge">UNIQUE ART</span></div><div class="small muted">Illustration dijana secara automatik dan unik untuk setiap character. Artwork dipaparkan lebih kecil untuk menjimatkan ruang.</div><div id="livePortrait" class="generated-portrait" style="width:33.333%;max-width:33.333%;margin:10px auto 0"></div></div><div class="fullcol row" style="justify-content:flex-end;margin-top:8px"><button class="btn" onclick="closeModal()">Cancel</button><button class="btn primary" onclick="saveCharacter()">Save Character</button></div>
   </div>
+
 </div></div>
 
 <script>
@@ -327,9 +316,34 @@ const weapons = [
 ];
 const rankOptions=["Infinite","EX","SSS","SS","S","A","B","C","D","E","F","???"];
 let characters=JSON.parse(localStorage.getItem("mta_chars")||"[]");
-characters.forEach(c=>{if(c.points==null)c.points=0;if(c.totalWins==null)c.totalWins=0;if(c.totalMatches==null)c.totalMatches=0;if(c.totalLosses==null)c.totalLosses=0;if(!c.personality)c.personality="Brave";});
+characters.forEach(c=>{if(c.points==null)c.points=0;if(c.championships==null)c.championships=0;if(c.totalWins==null)c.totalWins=0;if(c.totalMatches==null)c.totalMatches=0;if(c.totalLosses==null)c.totalLosses=0;if(!c.personality)c.personality="Brave";if(!c.nationality)c.nationality="Not Set";delete c.level;delete c.power;delete c.mana;delete c.speed;delete c.weapon;delete c.race;});
 let teams=JSON.parse(localStorage.getItem("mta_teams")||"[]");
-teams.forEach(t=>{if(t.totalMatches==null)t.totalMatches=0;if(t.totalWins==null)t.totalWins=0;if(t.totalLosses==null)t.totalLosses=0;});
+// Backward-compatible team migration: keep every existing team even if an older
+// version stored its member list under a different field. Never discard a team
+// just because its member array is missing.
+teams=Array.isArray(teams)?teams.filter(Boolean):[];
+teams.forEach(t=>{
+  if(!t.id)t.id=(crypto.randomUUID?crypto.randomUUID():"team-"+Date.now()+"-"+Math.random().toString(36).slice(2));
+  if(!Array.isArray(t.characters)){
+    const legacy=Array.isArray(t.members)?t.members:Array.isArray(t.memberIds)?t.memberIds:[];
+    t.characters=legacy.map(m=>typeof m==="object"?m.id:m).filter(Boolean).map(String);
+  }else{t.characters=t.characters.map(m=>typeof m==="object"?m.id:m).filter(Boolean).map(String);}
+  if(t.totalMatches==null)t.totalMatches=0;if(t.totalWins==null)t.totalWins=0;if(t.championships==null)t.championships=0;if(t.achievementPoints==null)t.achievementPoints=Math.floor(Number(t.totalWins||0)/2);if(t.totalLosses==null)t.totalLosses=0;
+});
+// Recover team membership from character.teamId when an older team record had
+// an incomplete member array. Existing explicit team membership is preserved.
+const teamIds=new Set(teams.map(t=>String(t.id)));
+characters.forEach(c=>{
+  if(c.teamId&&teamIds.has(String(c.teamId))){
+    const t=teams.find(x=>String(x.id)===String(c.teamId));
+    if(t&&!t.characters.includes(String(c.id))&&t.characters.length<3)t.characters.push(String(c.id));
+  }
+});
+// Normalize character references to the actual stored character IDs.
+const charIds=new Set(characters.map(c=>String(c.id)));
+teams.forEach(t=>{t.characters=[...new Set(t.characters.map(String).filter(id=>charIds.has(id)))].slice(0,3);});
+localStorage.setItem("mta_chars",JSON.stringify(characters));
+localStorage.setItem("mta_teams",JSON.stringify(teams));
 let tournament=JSON.parse(localStorage.getItem("mta_tournament")||"null");
 
 function save(){localStorage.setItem("mta_chars",JSON.stringify(characters));localStorage.setItem("mta_teams",JSON.stringify(teams));localStorage.setItem("mta_tournament",JSON.stringify(tournament));renderAll()}
@@ -337,14 +351,25 @@ function showPage(id){document.querySelectorAll(".page").forEach(x=>x.classList.
 document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>showPage(b.dataset.page));
 
 
+const nationalities = [
+"Afghanistan","Albania","Algeria","Andorra","Angola","Antigua and Barbuda","Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bhutan","Bolivia","Bosnia and Herzegovina","Botswana","Brazil","Brunei","Bulgaria","Burkina Faso","Burundi","Cabo Verde","Cambodia","Cameroon","Canada","Central African Republic","Chad","Chile","China","Colombia","Comoros","Congo (Republic of the Congo)","Costa Rica","Côte d'Ivoire","Croatia","Cuba","Cyprus","Czechia","Democratic Republic of the Congo","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Eswatini","Ethiopia","Fiji","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Greece","Grenada","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","North Korea","North Macedonia","Norway","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Qatar","Romania","Russia","Rwanda","Saint Kitts and Nevis","Saint Lucia","Saint Vincent and the Grenadines","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Korea","South Sudan","Spain","Sri Lanka","Sudan","Suriname","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor-Leste","Togo","Tonga","Trinidad and Tobago","Tunisia","Türkiye","Turkmenistan","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Yemen","Zambia","Zimbabwe"
+];
+const namePools={
+ Female:["Aeliana","Alina","Amara","Anastasia","Aria","Aurora","Celeste","Elara","Elowen","Evelyn","Freya","Iris","Isla","Liora","Lyra","Mira","Nadia","Nerissa","Rhea","Selene","Seraphina","Sienna","Talia","Valeria","Violet","Yuna"],
+ Male:["Adrian","Alaric","Alden","Arden","Cassian","Cedric","Damian","Darius","Elias","Evander","Felix","Gideon","Kael","Leon","Lucian","Matthias","Nolan","Orion","Ronan","Rowan","Silas","Theo","Valen","Victor","Zane"],
+ Unknown:["Ari","Ash","Avery","Blair","Cameron","Eden","Emery","Finley","Kai","Kieran","Lennox","Morgan","Nova","Quinn","Reese","River","Sage","Skyler","Sol","Taylor"]
+};
+const familyNames=["Aster","Blackwood","Dawn","Everhart","Frost","Hawthorne","Lunaris","Moonfall","Nightbloom","Ravenwood","Silverstone","Starfall","Stormveil","Valebrook","Wintermere","Wynter","Zephyr","Ashborne","Brightwell","Duskryn"];
+function fillNationalityList(){const el=document.getElementById("nationalityList");if(el)el.innerHTML=nationalities.map(x=>`<option value="${esc(x)}"></option>`).join("");}
+function generateCharacterName(){const gender=document.getElementById("fGender")?.value||"Unknown";const pool=namePools[gender]||namePools.Unknown;const used=new Set(characters.map(c=>String(c.name||"").trim().toLowerCase()));const available=pool.flatMap(first=>familyNames.map(last=>`${first} ${last}`)).filter(n=>!used.has(n.toLowerCase()));const choices=available.length?available:pool.map(first=>`${first} ${familyNames[Math.floor(Math.random()*familyNames.length)]}`);const name=choices[Math.floor(Math.random()*choices.length)];const input=document.getElementById("fName");if(input){input.value=name;input.dispatchEvent(new Event("input"));}}
 const artPalettes=[["#ff4f9a","#7c5cff","#1b1434"],["#45d6ff","#625cff","#101d38"],["#ff7b5c","#c62d73","#2a1522"],["#74e89c","#2b8a68","#11261f"],["#ffd166","#ef7d32","#2c2112"],["#c6a7ff","#7957d5","#21183b"],["#f4f7ff","#6a8dff","#17213e"],["#8de8ff","#274c77","#0d182b"]];
 function artHash(x){let h=2166136261;for(let i=0;i<x.length;i++){h^=x.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
 function artRand(h){return function(){h=(Math.imul(h,1664525)+1013904223)>>>0;return h/4294967296}}
 function svgEsc(x){return String(x??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&apos;"}[m]))}
 function makePortrait(c){
- const seed=[c.id||"",c.name,c.gender,c.race,c.weapon,c.age,c.personality||"Brave"].join("|"),r=artRand(artHash(seed)),p=artPalettes[Math.floor(r()*artPalettes.length)],hair=p[0],outfit=p[1],bg=p[2],eye=r()>.5?"#f8f0ff":"#9cf6ff";
+ const seed=[c.id||"",c.name,c.gender,c.nationality,c.age,c.personality||"Brave"].join("|"),r=artRand(artHash(seed)),p=artPalettes[Math.floor(r()*artPalettes.length)],hair=p[0],outfit=p[1],bg=p[2],eye=r()>.5?"#f8f0ff":"#9cf6ff";
  const personality=c.personality||"Brave";
- const beast=/Rabbitkin|Catfolk|Wolfkin|Foxkin|Beastkin|Harpy/i.test(c.race),horn=/Demon|Fallen Angel|Demon Lord/i.test(c.race),wing=/Angel|Celestial|Spirit|Fairy|Fallen Angel/i.test(c.race);
+ const styleSeed=artHash(seed); const beast=(styleSeed%7===0),horn=(styleSeed%11===0),wing=(styleSeed%5===0);
  const blush=/Shy|Cheerful|Playful/i.test(personality)?'<circle cx="150" cy="195" r="9" fill="#ff8fa3" opacity=".65"/><circle cx="250" cy="195" r="9" fill="#ff8fa3" opacity=".65"/>':'';
  const sparkle=/Elegant|Mysterious|Celestial/i.test(personality)?'<path d="M65 100l5 12 12 5-12 5-5 12-5-12-12-5 12-5z" fill="#fff8"/><path d="M335 105l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#fff8"/>':'';
  const angry=/Fierce|Serious|Chaotic/i.test(personality)?'<path d="M150 145l25 8M250 145l-25 8" stroke="#5b2636" stroke-width="6" stroke-linecap="round"/>':'';
@@ -354,19 +379,24 @@ function makePortrait(c){
  const wings=wing?`<path d="M110 220 Q18 145 35 70 Q110 110 145 190Z" fill="#fff2" stroke="#fff8" stroke-width="3"/><path d="M290 220 Q382 145 365 70 Q290 110 255 190Z" fill="#fff2" stroke="#fff8" stroke-width="3"/>`:"";
  const hairShape=c.gender==="Male"?`<path d="M112 125 Q105 55 200 42 Q295 55 288 125 Q245 82 200 88 Q155 82 112 125Z" fill="${hair}"/>`:`<path d="M98 135 Q82 48 200 34 Q318 48 302 135 Q275 82 240 70 Q200 49 160 72 Q123 84 98 135Z" fill="${hair}"/><path d="M105 125 Q78 165 110 215" fill="none" stroke="${hair}" stroke-width="27" stroke-linecap="round"/><path d="M295 125 Q322 165 290 215" fill="none" stroke="${hair}" stroke-width="27" stroke-linecap="round"/>`;
  const wid=artHash(seed);
- return `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g${wid}" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${bg}"/><stop offset="1" stop-color="${outfit}"/></linearGradient></defs><rect width="400" height="500" rx="24" fill="url(#g${wid})"/><circle cx="${70+Math.floor(r()*260)}" cy="${70+Math.floor(r()*170)}" r="125" fill="${hair}" opacity=".13"/>${wings}${horns}${ears}<path d="M25 430 Q200 330 375 430 L400 500 H0Z" fill="#070a14" opacity=".9"/><path d="M120 238 Q200 205 280 238 L305 405 Q200 470 95 405Z" fill="${outfit}" stroke="${hair}" stroke-width="5"/><ellipse cx="200" cy="155" rx="79" ry="92" fill="#f2c9bd"/>${hairShape}<ellipse cx="166" cy="158" rx="10" ry="14" fill="${eye}"/><ellipse cx="234" cy="158" rx="10" ry="14" fill="${eye}"/><circle cx="166" cy="160" r="4"/><circle cx="234" cy="160" r="4"/>${blush}${angry}${smile}<text x="22" y="32" fill="#fff" font-size="12" font-family="system-ui">AUTO GENERATED CHARACTER ART</text><text x="22" y="466" fill="#fff" font-size="18" font-weight="800" font-family="system-ui">${svgEsc(c.name||"Unnamed")}</text><text x="22" y="488" fill="#d7ddff" font-size="12" font-family="system-ui">${svgEsc(c.race||"Unknown")} • ${svgEsc(c.rank||"???")}</text></svg>`;
+ return `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g${wid}" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${bg}"/><stop offset="1" stop-color="${outfit}"/></linearGradient></defs><rect width="400" height="500" rx="24" fill="url(#g${wid})"/><circle cx="${70+Math.floor(r()*260)}" cy="${70+Math.floor(r()*170)}" r="125" fill="${hair}" opacity=".13"/>${wings}${horns}${ears}<path d="M25 430 Q200 330 375 430 L400 500 H0Z" fill="#070a14" opacity=".9"/><path d="M120 238 Q200 205 280 238 L305 405 Q200 470 95 405Z" fill="${outfit}" stroke="${hair}" stroke-width="5"/><ellipse cx="200" cy="155" rx="79" ry="92" fill="#f2c9bd"/>${hairShape}<ellipse cx="166" cy="158" rx="10" ry="14" fill="${eye}"/><ellipse cx="234" cy="158" rx="10" ry="14" fill="${eye}"/><circle cx="166" cy="160" r="4"/><circle cx="234" cy="160" r="4"/>${blush}${angry}${smile}<text x="22" y="32" fill="#fff" font-size="12" font-family="system-ui">AUTO GENERATED CHARACTER ART</text><text x="22" y="466" fill="#fff" font-size="18" font-weight="800" font-family="system-ui">${svgEsc(c.name||"Unnamed")}</text><text x="22" y="488" fill="#d7ddff" font-size="12" font-family="system-ui">${svgEsc(c.nationality||"Not Set")} • ${svgEsc(c.rank||"???")}</text></svg>`;
 }
 function renderLivePortrait(){
  const box=document.getElementById("livePortrait");if(!box)return;
- const c={id:"preview",name:document.getElementById("fName").value||"Unnamed",gender:document.getElementById("fGender").value,race:document.getElementById("fRace").value,age:document.getElementById("fAge").value,personality:document.getElementById("fPersonality").value,rank:document.getElementById("fRank").value,weapon:document.getElementById("fWeapon").value||"None"};
+ const c={id:"preview",name:document.getElementById("fName").value||"Unnamed",gender:document.getElementById("fGender").value,nationality:document.getElementById("fNationality").value,age:document.getElementById("fAge").value,personality:document.getElementById("fPersonality").value,rank:document.getElementById("fRank").value};
  box.innerHTML=makePortrait(c);
 }
 function bindArtPreview(){
- ["fName","fGender","fRace","fAge","fPersonality","fRank","fWeapon"].forEach(id=>{const e=document.getElementById(id);if(e&&!e.dataset.art){e.addEventListener("input",renderLivePortrait);e.addEventListener("change",renderLivePortrait);e.dataset.art="1"}});
+ ["fName","fGender","fNationality","fAge","fPersonality","fRank"].forEach(id=>{const e=document.getElementById(id);if(e&&!e.dataset.art){e.addEventListener("input",renderLivePortrait);e.addEventListener("change",renderLivePortrait);e.dataset.art="1"}});
 }
 function renderCharacterGallery(){
  const g=document.getElementById("characterGallery");if(!g)return;
- g.innerHTML=characters.length?characters.map(c=>{const t=teams.find(x=>x.id===c.teamId)||teams.find(x=>x.characters.includes(c.id));const logo=t?.logo||"";return `<div class="card character-card-wrap" style="padding:10px">${t?`<div class="team-logo-badge" title="${esc(t.name)}">${logo?`<img src="${logo}" alt="${esc(t.name)} logo">`:`<span style="font-size:24px">🛡️</span>`}</div>`:""}<div class="generated-portrait">${makePortrait(c)}</div>${raceNameHTML(c)}<div class="small muted">${esc(c.race)} • ${esc(c.personality||"Brave")} • ${esc(c.rank)} • ${esc(c.weapon)} • ${playerPoints(c)} pts</div>${t?`<div class="small muted" style="margin-top:3px">🛡️ ${esc(t.name)}</div>`:""}${playerAchievement(c)}<button class="btn small" style="margin-top:7px" onclick="editCharacter('${c.id}')">✏️ Edit Character</button></div>`}).join(''):'<div class="empty">Create a character to generate an illustration.</div>';
+ const mode=document.getElementById("playerSortMode")?.value||"selection";
+ let list=characters.slice();
+ if(mode==="team") list.sort((a,b)=>teamName(a.teamId).localeCompare(teamName(b.teamId))||comparePlayers(a,b));
+ else if(mode==="point") list.sort((a,b)=>playerPoints(b)-playerPoints(a)||playerLevel(b)-playerLevel(a)||Number(b.championships||0)-Number(a.championships||0));
+ else list.sort((a,b)=>playerLevel(b)-playerLevel(a)||playerPoints(b)-playerPoints(a)||Number(b.championships||0)-Number(a.championships||0)||String(a.name||'').localeCompare(String(b.name||'')));
+ g.innerHTML=list.length?list.map(c=>{const t=teams.find(x=>x.id===c.teamId)||teams.find(x=>x.characters.includes(c.id));const logo=t?.logo||"";return `<div class="card character-card-wrap" style="padding:10px">${t?`<div class="team-logo-badge" title="${esc(t.name)}">${logo?`<img src="${logo}" alt="${esc(t.name)} logo">`:`<span style="font-size:24px">🛡️</span>`}</div>`:""}<div class="generated-portrait">${makePortrait(c)}</div>${raceNameHTML(c)}<div class="small muted">${levelProgressText(c)} • ${playerStars(c)}★ • ${esc(c.nationality||"Not Set")} • ${esc(c.rank)} • ${playerPoints(c)} pts</div>${t?`<div class="small muted" style="margin-top:3px">🛡️ ${esc(t.name)}</div>`:""}${playerAchievement(c)}<button class="btn small" style="margin-top:7px" onclick="editCharacter('${c.id}')">✏️ Edit Character</button></div>`}).join(''):'<div class="empty">Create a character to generate an illustration.</div>';
 }
 
 const raceUnlocks={
@@ -390,14 +420,22 @@ function playerPoints(c){return Math.max(0,Number(c?.points||0));}
 function raceRequiredPoints(race){return raceUnlocks[race]??0;}
 function canUseRace(race,c){return baseRaceNames.has(race)||playerPoints(c)>=raceRequiredPoints(race);}
 function raceTier(points){if(points>=41)return 5;if(points>=31)return 4;if(points>=21)return 3;if(points>=16)return 2;return 1;}
+function championRequirementForLevelUp(level){if(level<=1)return 2;return 3*Math.pow(2,level-3);}
+function playerLevel(c){let champions=Math.max(0,Number(c?.championships||0));let level=1,req=2;while(level<50&&champions>=req){champions-=req;level++;req=level===2?3:req*2;}return level;}
+function championsIntoCurrentLevel(c){let champions=Math.max(0,Number(c?.championships||0)),level=1,req=2;while(level<50&&champions>=req){champions-=req;level++;req=level===2?3:req*2;}return {level,used:champions,needed:level>=50?0:req};}
+function levelProgressText(c){const p=championsIntoCurrentLevel(c);if(p.level>=50)return `LV 50 MAX • 🏆 ${Number(c?.championships||0)} Champion`;return `LV ${p.level} • 🏆 ${p.used}/${p.needed} Champion to LV ${p.level+1}`;}
+function teamAchievementPoints(t){return Math.max(0,Number(t?.achievementPoints ?? Math.floor(Number(t?.totalWins||0)/2)));}
+function playerStars(c){return Math.floor(Math.max(0,Number(c?.totalWins||0))/30)%5;}
+function playerSelectionScore(c){return [playerLevel(c),playerPoints(c),Number(c?.championships||0),Number(c?.totalWins||0)];}
+function comparePlayers(a,b){const A=playerSelectionScore(a),B=playerSelectionScore(b);for(let i=0;i<A.length;i++){if(B[i]!==A[i])return B[i]-A[i];}return String(a.name||'').localeCompare(String(b.name||''));}
 function playerAchievement(c){
  const wins=Math.max(0,Number(c?.totalWins||0)),matches=Math.max(0,Number(c?.totalMatches||0)),losses=Math.max(0,Number(c?.totalLosses||0));
- const stars=Math.floor(wins/30)%5;
+ const stars=playerStars(c);
  const thrones=Math.floor(wins/150);
  const mythic=thrones>=5;
  const starText=stars?('★'.repeat(stars)+`<span class="muted">${'★'.repeat(5-stars)}</span>`):'<span class="muted">★★★★★</span>';
  const rankHtml=mythic?`<span class="mythic-title">MYTHIC</span> <span class="throne-icon">👑 × ${thrones}</span>`:`<span class="stars">${starText}</span>${thrones?` <span class="throne-icon">👑 × ${thrones}</span>`:''}`;
- return `<div class="achievement-stats"><span>⚔️ ${matches} Match</span><span class="ach-win">🏆 ${wins} Win</span><span class="ach-loss">💀 ${losses} Lose</span></div><div class="achievement-rank ${mythic?'mythic-rank':''}">${rankHtml}</div>`;
+ return `<div class="achievement-stats"><span>⚔️ ${matches} Match</span><span class="ach-win">🏆 ${wins} Win</span><span>👑 ${Number(c?.championships||0)} Champion</span><span class="ach-loss">💀 ${losses} Lose</span></div><div class="achievement-rank ${mythic?'mythic-rank':''}">${rankHtml}</div>`;
 }
 function raceNameHTML(c){const pts=playerPoints(c),tier=raceTier(pts);let effect=tier===3?'🔥':tier===4?'☠️':tier===5?'🪽':'';return `<span class="player-name tier-${tier}">${effect?`<span class="name-effect">${effect}</span>`:''}${esc(c.name||'Unnamed')}</span>`;}
 function unlockedRaceOptions(c){const editing=!!c&&!!c.id;return races.filter(r=>{const name=r[0],ok=canUseRace(name,c||{points:0});return ok||(editing&&c.race===name)}).map(r=>{const name=r[0],req=raceRequiredPoints(name),selected=c&&c.race===name?'selected':'';const currentLocked=editing&&c.race===name&&!canUseRace(name,c);return `<option value="${esc(name)}" ${selected}>${esc(name)}${req>0?' — '+req+' pts':''}${currentLocked?' — Current Race':''}</option>`}).join('');}
@@ -428,58 +466,40 @@ function randomWeapon(){
 }
 function openCharacterModal(editId=null){
  document.getElementById("modal").classList.add("show");
- populateStatOptions();
  document.getElementById("editingCharacterId").value=editId||"";
- populateWeapons();
- populateSpeedOptions();
- const rs=document.getElementById("fRace");const modalChar=editId?characters.find(x=>x.id===editId):{points:0};rs.innerHTML=unlockedRaceOptions(modalChar);document.getElementById("fPoints").textContent=playerPoints(modalChar);
+ document.getElementById("characterModalTitle").textContent=editId?"✏️ Edit Character":"Register Character";
+ fillNationalityList();
  document.getElementById("fRank").innerHTML=rankOptions.map(x=>`<option>${x}</option>`).join("");
- document.getElementById("fTeam").innerHTML='<option value="">No Team</option>'+teams.map(t=>`<option value="${t.id}" ${t.characters.length>=3?"disabled":""}>${t.name}${t.characters.length>=3?" — FULL":""}</option>`).join("");
- if(!document.getElementById("fName").value)document.getElementById("fAge").value="Young";
- document.getElementById("fWeapon").value="None";
- applyRace();bindArtPreview();renderLivePortrait();
+ document.getElementById("fTeam").innerHTML='<option value="">No Team</option>'+teams.map(t=>`<option value="${t.id}">${esc(t.name)}${t.characters.length>=3?" — FULL":""}</option>`).join("");
+ if(editId){
+   const c=characters.find(x=>x.id===editId); if(!c)return;
+   document.getElementById("fName").value=c.name||"";document.getElementById("fGender").value=c.gender||"Unknown";document.getElementById("fNationality").value=c.nationality||"Not Set";document.getElementById("fAge").value=c.age||"Young";document.getElementById("fPersonality").value=c.personality||"Brave";document.getElementById("fRank").value=c.rank||"C";document.getElementById("fTeam").value=c.teamId||"";
+ }else{
+   document.getElementById("fName").value="";document.getElementById("fGender").value="Female";document.getElementById("fNationality").value="Malaysia";document.getElementById("fAge").value="Young";document.getElementById("fPersonality").value="Brave";document.getElementById("fRank").value="C";document.getElementById("fTeam").value="";generateCharacterName();
+ }
+ bindArtPreview();renderLivePortrait();
 }
 function closeModal(){document.getElementById("modal").classList.remove("show")}
-document.getElementById("fRace").addEventListener("change",applyRace);
-document.getElementById("autoFill").addEventListener("change",()=>{if(document.getElementById("autoFill").checked)applyRace()});
-function applyRace(){
- if(!document.getElementById("autoFill").checked)return;
- const r=raceByName(document.getElementById("fRace").value); if(!r)return;
- document.getElementById("fPower").value=r[2];
- document.getElementById("fRank").value=rankFromRange(r[1]);
- document.getElementById("fMana").value=r[3];
- document.getElementById("fSpeed").value=r[4];
-}
 function saveCharacter(){
- const name=document.getElementById("fName").value.trim(); if(!name)return alert("Enter a character name.");
+ const name=document.getElementById("fName").value.trim();if(!name)return alert("Enter a character name.");
+ const nationality=document.getElementById("fNationality").value.trim()||"Not Set";
  const editId=document.getElementById("editingCharacterId").value;
- const selectedRace=document.getElementById("fRace").value;
  const existing=editId?characters.find(x=>x.id===editId):null;
- if(!canUseRace(selectedRace,existing||{points:0})){const available=races.filter(r=>canUseRace(r[0],existing||{points:0})).map(r=>r[0]).join("\n");alert(`⚠️ Race tidak tersedia untuk character ini.\n\n${selectedRace} memerlukan ${raceRequiredPoints(selectedRace)} point, tetapi point character tidak mencukupi.\n\nSila tukar Race kepada salah satu pilihan yang tersedia di menu Race:\n\n${available}`);document.getElementById("fRace")?.focus();return;}
  const teamId=document.getElementById("fTeam").value;
- if(teamId){let t=teams.find(x=>x.id===teamId);if(!t||t.characters.length>=3 && (!existing||!t.characters.includes(existing.id)))return alert("That team is full.");}
- const data={name,gender:document.getElementById("fGender").value,race:selectedRace,age:document.getElementById("fAge").value,personality:document.getElementById("fPersonality").value,power:document.getElementById("fPower").value,rank:document.getElementById("fRank").value,mana:document.getElementById("fMana").value,speed:document.getElementById("fSpeed").value,weapon:document.getElementById("fWeapon").value||"None",teamId};
+ if(teamId){const t=teams.find(x=>x.id===teamId);if(!t||t.characters.length>=3&&(!existing||!t.characters.includes(existing.id)))return alert("That team is full.");}
+ const data={name,gender:document.getElementById("fGender").value,nationality,age:document.getElementById("fAge").value,personality:document.getElementById("fPersonality").value,rank:document.getElementById("fRank").value,teamId};
  if(existing){Object.assign(existing,data);teams.forEach(t=>t.characters=t.characters.filter(id=>id!==existing.id));if(teamId)teams.find(t=>t.id===teamId).characters.push(existing.id);}
- else {const c={id:crypto.randomUUID(),...data,points:0,totalWins:0};characters.push(c);if(teamId)teams.find(x=>x.id===teamId).characters.push(c.id);}
+ else{const c={id:crypto.randomUUID(),...data,points:0,championships:0,totalWins:0,totalMatches:0,totalLosses:0};characters.push(c);if(teamId)teams.find(x=>x.id===teamId).characters.push(c.id);}
  closeModal();save();
 }
-function editCharacter(id){
- const c=characters.find(x=>x.id===id);if(!c)return;
- openCharacterModal(id);
- document.getElementById("characterModalTitle").textContent="✏️ Edit Character";
- document.getElementById("fName").value=c.name||"";document.getElementById("fGender").value=c.gender||"Unknown";
- document.getElementById("fRace").innerHTML=unlockedRaceOptions(c);document.getElementById("fRace").value=c.race||"⚔️ Human";document.getElementById("fPoints").textContent=playerPoints(c);
- document.getElementById("fAge").value=c.age||"Young";document.getElementById("fPersonality").value=c.personality||"Brave";document.getElementById("fPower").value=c.power||"Low";document.getElementById("fRank").value=c.rank||"C";document.getElementById("fMana").value=c.mana||"Low";document.getElementById("fSpeed").value=c.speed||"Normal";
- populateStatOptions();populateWeapons();populateSpeedOptions(c.speed||"Normal");document.getElementById("fWeapon").value=c.weapon||"None";document.getElementById("fTeam").innerHTML='<option value="">No Team</option>'+teams.map(t=>`<option value="${t.id}" ${t.characters.length>=3&&!t.characters.includes(c.id)?"disabled":""}>${esc(t.name)}${t.characters.length>=3&&!t.characters.includes(c.id)?" — FULL":""}</option>`).join("");document.getElementById("fTeam").value=c.teamId||"";
- document.getElementById("autoFill").checked=false;bindArtPreview();renderLivePortrait();
-}
+function editCharacter(id){openCharacterModal(id)}
 
 function teamLogoSVG(name){
  const seed=artHash(String(name||"Team")); const r=artRand(seed); const pal=artPalettes[Math.floor(r()*artPalettes.length)];
  const initials=String(name||"TEAM").trim().split(/\s+/).slice(0,2).map(x=>x[0]).join('').toUpperCase();
  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${pal[0]}"/><stop offset="1" stop-color="${pal[1]}"/></linearGradient></defs><rect width="200" height="200" rx="42" fill="#0b1020"/><path d="M100 20L168 48V104c0 42-28 67-68 76-40-9-68-34-68-76V48z" fill="url(#g)" stroke="#fff" stroke-opacity=".65" stroke-width="6"/><circle cx="100" cy="90" r="34" fill="#0b1020" opacity=".72"/><text x="100" y="101" text-anchor="middle" font-family="system-ui" font-size="30" font-weight="900" fill="#fff">${svgEsc(initials||'T')}</text><path d="M62 145h76" stroke="#fff" stroke-opacity=".65" stroke-width="5" stroke-linecap="round"/></svg>`)}`;
 }
-function createTeam(){const n=prompt("Team name:",`Team ${teams.length+1}`);if(!n)return;teams.push({id:crypto.randomUUID(),name:n,characters:[],logo:teamLogoSVG(n),totalMatches:0,totalWins:0,totalLosses:0});save()}
+function createTeam(){const n=prompt("Team name:",`Team ${teams.length+1}`);if(!n)return;teams.push({id:crypto.randomUUID(),name:n,characters:[],logo:teamLogoSVG(n),totalMatches:0,totalWins:0,totalLosses:0,championships:0});save()}
 function previewTeamLogo(src){const p=document.getElementById("teamLogoPreview");if(p)p.innerHTML=src?`<img src="${src}" class="team-logo-small" alt="Team logo"><div class="small muted" style="margin-top:5px">Current logo</div>`:'No team logo selected.';}
 document.addEventListener("change",e=>{if(e.target&&e.target.id==="editTeamLogoFile"&&e.target.files&&e.target.files[0]){const r=new FileReader();r.onload=()=>{e.target.dataset.generated=r.result;previewTeamLogo(r.result)};r.readAsDataURL(e.target.files[0]);}});
 function generateTeamLogo(){const name=document.getElementById("editTeamName").value.trim()||"Team";const src=teamLogoSVG(name);document.getElementById("editTeamLogoFile").value="";document.getElementById("editTeamLogoFile").dataset.generated=src;previewTeamLogo(src);}
@@ -500,7 +520,7 @@ function openTeamEdit(id){
    const disabled=unavailableNow||full;
    const note=checked?"Current member":unavailableNow?`Currently in ${esc(other.name)}`:full?"Team is full":"AVAILABLE — select to join";
    const cls=!checked&&!unavailableNow&&!full?' available-member':'';
-   return `<label class="team-member-option${cls}" style="display:flex;align-items:center;gap:9px;padding:10px;border:1px solid var(--line);border-radius:9px;background:#0a1020"><input type="checkbox" class="team-member-check" value="${c.id}" ${checked?"checked":""} ${disabled?"disabled":""} style="width:auto"><span style="flex:1"><b>${esc(c.name)}</b><br><span class="small muted">${esc(c.race)} • ${esc(c.personality||"Brave")} • ${esc(c.rank)} • ${esc(c.weapon)} • ${playerPoints(c)} pts</span></span><span class="small ${!disabled&&!checked?'good-text':''}">${note}</span></label>`;
+   return `<label class="team-member-option${cls}" style="display:flex;align-items:center;gap:9px;padding:10px;border:1px solid var(--line);border-radius:9px;background:#0a1020"><input type="checkbox" class="team-member-check" value="${c.id}" ${checked?"checked":""} ${disabled?"disabled":""} style="width:auto"><span style="flex:1"><b>${esc(c.name)}</b><br><span class="small muted">${esc(c.nationality||"Not Set")} • LV ${playerLevel(c)} • 🏆 ${Number(c.championships||0)} Champion • ${esc(c.personality||"Brave")} • ${esc(c.rank||"C")} • ${playerPoints(c)} pts</span></span><span class="small ${!disabled&&!checked?'good-text':''}">${note}</span></label>`;
  }).join(""):'<div class="empty">No characters registered.</div>';
  document.getElementById("teamEditModal").classList.add("show");
 }
@@ -514,13 +534,14 @@ function saveTeamEdit(){
  const generated=file.dataset.generated||""; if(generated){finish(generated);return;}
  if(file.files&&file.files[0]){const reader=new FileReader();reader.onload=()=>finish(reader.result);reader.readAsDataURL(file.files[0]);}else finish(t.logo||teamLogoSVG(name));
 }
-function joinEmptyTeam(teamId){const t=teams.find(x=>x.id===teamId);if(!t||t.characters.length)return alert("This team is no longer empty.");const available=characters.filter(c=>!c.teamId&&!teams.some(team=>team.characters.includes(c.id)));if(!available.length)return alert("No unassigned characters are available. Create a character first, or leave one without a team.");const choices=available.map((c,i)=>`${i+1}. ${c.name} — ${c.race} — ${c.personality||"Brave"}`).join("\n");const answer=prompt(`Join ${t.name}\nChoose a character to join this empty team:\n\n${choices}\n\nEnter the number:`);const index=Number(answer)-1;if(!Number.isInteger(index)||index<0||index>=available.length)return;const c=available[index];t.characters=[c.id];c.teamId=t.id;if(!t.logo)t.logo=teamLogoSVG(t.name);save()}
+function joinEmptyTeam(teamId){const t=teams.find(x=>x.id===teamId);if(!t||t.characters.length)return alert("This team is no longer empty.");const available=characters.filter(c=>!c.teamId&&!teams.some(team=>team.characters.includes(c.id)));if(!available.length)return alert("No unassigned characters are available. Create a character first, or leave one without a team.");const choices=available.map((c,i)=>`${i+1}. ${c.name} — ${c.nationality||"Not Set"} — ${c.personality||"Brave"}`).join("\n");const answer=prompt(`Join ${t.name}\nChoose a character to join this empty team:\n\n${choices}\n\nEnter the number:`);const index=Number(answer)-1;if(!Number.isInteger(index)||index<0||index>=available.length)return;const c=available[index];t.characters=[c.id];c.teamId=t.id;if(!t.logo)t.logo=teamLogoSVG(t.name);save()}
 
 function deleteChar(id){const c=characters.find(x=>x.id===id);if(!confirm(`Delete ${c.name}?`))return;teams.forEach(t=>t.characters=t.characters.filter(x=>x!==id));characters=characters.filter(x=>x.id!==id);save()}
 function renderChars(){
- const tb=document.getElementById("charTable");if(!characters.length){tb.innerHTML='<tr><td colspan="12" class="empty">No characters registered.</td></tr>';return}
- tb.innerHTML=characters.map(c=>{let t=teams.find(x=>x.id===c.teamId);return `<tr><td>${raceNameHTML(c)}<div class="small muted">${playerPoints(c)} pts</div>${playerAchievement(c)}</td><td>${c.gender}</td><td>${esc(c.race)}</td><td>${esc(c.age)}</td><td>${esc(c.personality||"Brave")}</td><td>${esc(c.power)}</td><td><span class="pill">${c.rank}</span></td><td>${esc(c.mana)}</td><td>${esc(c.speed)}</td><td>${esc(c.weapon)}</td><td>${t?esc(t.name):"—"}</td><td><button class="btn small" onclick="editCharacter('${c.id}')">✏️ Edit</button> <button class="btn danger small" onclick="deleteChar('${c.id}')">Delete</button></td></tr>`}).join("")
+ const tb=document.getElementById("charTable");if(!characters.length){tb.innerHTML='<tr><td colspan="8" class="empty">No characters registered.</td></tr>';return}
+ tb.innerHTML=characters.map(c=>{let t=teams.find(x=>x.id===c.teamId);const progress=championsIntoCurrentLevel(c);const champText=progress.level>=50?`${Number(c.championships||0)} Champion`:`${Number(c.championships||0)} Champion`;return `<tr><td>${raceNameHTML(c)}<div class="small muted">${playerPoints(c)} pts • LV ${playerLevel(c)} • 🏆 ${champText}</div>${playerAchievement(c)}</td><td>${esc(c.gender||"Unknown")}</td><td>${esc(c.nationality||"Not Set")}</td><td>${esc(c.age||"Young")}</td><td>${esc(c.personality||"Brave")}</td><td><span class="pill">${esc(c.rank||"C")}</span></td><td>${t?esc(t.name):"—"}</td><td><button class="btn small" onclick="editCharacter('${c.id}')">✏️ Edit</button> <button class="btn danger small" onclick="deleteChar('${c.id}')">Delete</button></td></tr>`}).join("")
 }
+
 function kickCharacter(teamId,charId){
  const t=teams.find(x=>String(x.id)===String(teamId));
  const c=characters.find(x=>String(x.id)===String(charId));
@@ -537,7 +558,7 @@ function teamAchievement(t){
  const stars=Math.floor(wins/10)%10;
  const starText=stars?('★'.repeat(stars)+`<span class="muted">${'★'.repeat(10-stars)}</span>`):'<span class="muted">★★★★★★★★★★</span>';
  const rank=thrones>0?`<span class="throne-icon">👑 × ${thrones}</span>`:`<span class="stars">${starText}</span>`;
- return `<div class="achievement-stats"><span>⚔️ ${matches} Match</span><span class="ach-win">🏆 ${wins} Win</span><span class="ach-loss">💀 ${losses} Lose</span></div><div class="achievement-rank">${rank}</div>`;
+ return `<div class="achievement-stats"><span>⚔️ ${matches} Match</span><span class="ach-win">🏆 ${wins} Win</span><span>👑 ${Number(t?.championships||0)} Champion</span><span class="ach-loss">💀 ${losses} Lose</span></div><div class="achievement-rank">${rank}</div>`;
 }
 function showSystemWarning(title,message,detail=''){
  const box=document.getElementById('systemWarning'); if(!box)return alert((title?title+'\n\n':'')+message+(detail?'\n\n'+detail:''));
@@ -550,7 +571,8 @@ function showSystemWarning(title,message,detail=''){
 function closeSystemWarning(){const box=document.getElementById('systemWarning');if(box)box.classList.remove('show')}
 function renderTeams(){
  const g=document.getElementById("teamGrid");if(!teams.length){g.innerHTML='<div class="card empty">No teams. Add a team first.</div>';return}
- g.innerHTML=teams.map(t=>{let cs=t.characters.map(id=>characters.find(c=>c.id===id)).filter(Boolean);return `<div class="team ${cs.length>=3?"full":""}"><div class="row between"><span class="row" style="gap:9px"><img src="${t.logo||teamLogoSVG(t.name)}" class="team-logo-small" alt="${esc(t.name)} logo"><span class="team-name">${esc(t.name)}</span></span><span class="pill">${cs.length}/3</span></div><div class="chars">${cs.length?cs.map(c=>`<div class="team-kick-row"><span>• ${esc(c.name)} <span class="muted">(${esc(c.race)})</span></span><button class="btn danger small" type="button" onclick="kickCharacter('${t.id}','${c.id}')">✕ Kick</button></div>`).join(""):"No characters"}</div>${teamAchievement(t)}
+ const ordered=teams.slice().sort((a,b)=>teamAchievementPoints(b)-teamAchievementPoints(a)||Number(b.totalWins||0)-Number(a.totalWins||0)||String(a.name||'').localeCompare(String(b.name||'')));
+ g.innerHTML=ordered.map(t=>{const ids=Array.isArray(t.characters)?t.characters:[];let cs=ids.map(id=>characters.find(c=>String(c.id)===String(id))).filter(Boolean).sort(comparePlayers);return `<div class="team ${cs.length>=3?"full":""}"><div class="row between"><span class="row" style="gap:9px"><img src="${t.logo||teamLogoSVG(t.name)}" class="team-logo-small" alt="${esc(t.name)} logo"><span class="team-name">${esc(t.name)}</span></span><span class="pill">${cs.length}/3</span></div><div class="team-achievement" style="margin:7px 0">🏆 Achievement Points: <b>${teamAchievementPoints(t)}</b></div><div class="chars">${cs.length?cs.map(c=>`<div class="team-kick-row"><span>• ${esc(c.name)} <span class="muted">${levelProgressText(c)} • ${playerStars(c)}★ • ${esc(c.nationality||"Not Set")}</span></span><button class="btn danger small" type="button" onclick="kickCharacter('${t.id}','${c.id}')">✕ Kick</button></div>`).join(""):"No characters"}</div>${teamAchievement(t)}
  <div class="row" style="margin-top:12px;gap:8px"><button class="btn small primary" onclick="openTeamEdit('${t.id}')">✏️ Edit Team</button>${cs.length===0?`<button class="btn small good" onclick="joinEmptyTeam('${t.id}')">➕ Join Empty Team</button>`:""}</div>
  </div>`}).join("")
 }
@@ -564,7 +586,7 @@ function updateTournamentPicker(){
  const n=Number(count.value||4);
  const valid=teams.filter(t=>t&&t.id&&String(t.name||"").trim());
  const old=new Set([...picker.querySelectorAll("input:checked")].map(x=>x.value));
- picker.innerHTML=valid.length?valid.map(t=>`<label class="tournament-pick"><input type="checkbox" class="tournament-team-check" value="${esc(t.id)}"><span>🛡️ <b>${esc(t.name)}</b><br><span class="small muted">${t.characters.length}/3 members</span></span></label>`).join(""):'<div class="empty">No valid teams yet. Create teams first.</div>';
+ picker.innerHTML=valid.length?valid.map(t=>`<label class="tournament-pick"><input type="checkbox" class="tournament-team-check" value="${esc(t.id)}"><span>🛡️ <b>${esc(t.name)}</b><br><span class="small muted">${Array.isArray(t.characters)?t.characters.length:0}/3 members</span></span></label>`).join(""):'<div class="empty">No valid teams yet. Create teams first.</div>';
  [...picker.querySelectorAll("input")].forEach(x=>x.checked=old.has(x.value));
  picker.querySelectorAll("input").forEach(x=>x.addEventListener("change",()=>{
    const checked=[...picker.querySelectorAll("input:checked")];
@@ -609,19 +631,19 @@ function tournamentChampion(){
 }
 function captureTournamentCharacterState(){
   const state={};
-  characters.forEach(c=>{state[c.id]={points:Number(c.points||0),totalWins:Number(c.totalWins||0),totalMatches:Number(c.totalMatches||0),totalLosses:Number(c.totalLosses||0)}});
+  characters.forEach(c=>{state[c.id]={points:Number(c.points||0),championships:Number(c.championships||0),totalWins:Number(c.totalWins||0),totalMatches:Number(c.totalMatches||0),totalLosses:Number(c.totalLosses||0)}});
   return state;
 }
 function captureTournamentTeamState(){
   const state={};
-  teams.forEach(t=>{state[t.id]={totalWins:Number(t.totalWins||0),totalMatches:Number(t.totalMatches||0),totalLosses:Number(t.totalLosses||0)}});
+  teams.forEach(t=>{state[t.id]={championships:Number(t.championships||0),totalWins:Number(t.totalWins||0),totalMatches:Number(t.totalMatches||0),totalLosses:Number(t.totalLosses||0)}});
   return state;
 }
 function restoreTournamentCharacterState(){
   const snap=tournament?.preTournamentCharacters||{};
-  characters.forEach(c=>{if(snap[c.id]){c.points=snap[c.id].points;c.totalWins=snap[c.id].totalWins;c.totalMatches=snap[c.id].totalMatches;c.totalLosses=snap[c.id].totalLosses;}});
+  characters.forEach(c=>{if(snap[c.id]){c.points=snap[c.id].points;c.championships=snap[c.id].championships||0;c.totalWins=snap[c.id].totalWins;c.totalMatches=snap[c.id].totalMatches;c.totalLosses=snap[c.id].totalLosses;}});
   const ts=tournament?.preTournamentTeams||{};
-  teams.forEach(t=>{if(ts[t.id]){t.totalWins=ts[t.id].totalWins;t.totalMatches=ts[t.id].totalMatches;t.totalLosses=ts[t.id].totalLosses;}});
+  teams.forEach(t=>{if(ts[t.id]){t.championships=ts[t.id].championships||0;t.totalWins=ts[t.id].totalWins;t.totalMatches=ts[t.id].totalMatches;t.totalLosses=ts[t.id].totalLosses;}});
 }
 function clearTournamentSelections(){
   document.querySelectorAll('.tournament-team-check').forEach(x=>x.checked=false);
@@ -641,7 +663,7 @@ function generateTournament(){
    const ids=[...new Set(selected.map(t=>String(t.id)))];
    if(ids.length!==n) throw new Error('Duplicate team IDs were detected.');
    // Starting snapshot is captured BEFORE this tournament can award any points.
-   tournament={version:4,teamIds:ids,points:Object.fromEntries(ids.map(id=>[id,0])),wins:Object.fromEntries(ids.map(id=>[id,0])),rounds:buildRounds(ids),started:true,completed:false,preTournamentCharacters:captureTournamentCharacterState(),preTournamentTeams:captureTournamentTeamState()};
+   tournament={version:5,championAwarded:false,teamIds:ids,points:Object.fromEntries(ids.map(id=>[id,0])),wins:Object.fromEntries(ids.map(id=>[id,0])),rounds:buildRounds(ids),started:true,completed:false,preTournamentCharacters:captureTournamentCharacterState(),preTournamentTeams:captureTournamentTeamState()};
    rebuildBracket(tournament.rounds);
    localStorage.setItem('mta_tournament',JSON.stringify(tournament));
    renderAll();
@@ -692,7 +714,12 @@ function recordWinner(ri,mi,id){
    members.forEach(c=>{c.totalMatches=Math.max(0,Number(c.totalMatches||0))+1;c.totalLosses=Math.max(0,Number(c.totalLosses||0))+1;});
  }
  rebuildBracket(tournament.rounds);
- tournament.completed=!!tournamentChampion();
+ const championId=tournamentChampion();
+ if(championId&&!tournament.championAwarded){
+   const championTeam=teams.find(t=>String(t.id)===String(championId));
+   if(championTeam){championTeam.championships=Math.max(0,Number(championTeam.championships||0))+1;const members=championTeam.characters.map(cid=>characters.find(c=>c.id===cid)).filter(Boolean);members.forEach(c=>c.championships=Math.max(0,Number(c.championships||0))+1);tournament.championAwarded=true;}
+ }
+ tournament.completed=!!championId;
  save();
  renderBracket();renderStandings();
 }
@@ -755,31 +782,32 @@ let selectedGalleryTeamId=null;
 function selectTeamGallery(teamId){selectedGalleryTeamId=selectedGalleryTeamId===String(teamId)?null:String(teamId);renderTeamGallery();}
 function makeChibi(c){
  const personality=c.personality||"Brave";
- const seed=[c.id||"",c.name,c.gender,c.race,c.weapon,personality].join("|");
+ const seed=[c.id||"",c.name,c.gender,c.nationality,personality].join("|");
  const r=artRand(artHash(seed));
  const p=artPalettes[Math.floor(r()*artPalettes.length)],hair=p[0],outfit=p[1],bg=p[2];
- const beast=/Rabbitkin|Catfolk|Wolfkin|Foxkin|Beastkin|Harpy/i.test(c.race);
- const horn=/Demon|Fallen Angel|Demon Lord/i.test(c.race);
- const wing=/Angel|Celestial|Spirit|Fairy|Fallen Angel/i.test(c.race);
+ const styleSeed=artHash(seed);
+ const beast=styleSeed%7===0;
+ const horn=styleSeed%11===0;
+ const wing=styleSeed%5===0;
  const ears=beast?`<path d="M125 105 Q75 35 92 28 Q135 45 150 105" fill="${hair}"/><path d="M275 105 Q325 35 308 28 Q265 45 250 105" fill="${hair}"/>`:"";
  const horns=horn?`<path d="M140 90 Q100 45 120 30 Q145 55 155 82" fill="${hair}"/><path d="M260 90 Q300 45 280 30 Q255 55 245 82" fill="${hair}"/>`:"";
  const wings=wing?`<path d="M120 225 Q35 155 48 90 Q115 120 145 200Z" fill="#fff3" stroke="#fff8" stroke-width="3"/><path d="M280 225 Q365 155 352 90 Q285 120 255 200Z" fill="#fff3" stroke="#fff8" stroke-width="3"/>`:"";
  const face=/Fierce|Serious|Chaotic/i.test(personality)?`<path d="M154 153l20 6M246 153l-20 6" stroke="#5b2636" stroke-width="5"/><path d="M178 190 Q200 180 222 190" fill="none" stroke="#8c4e5d" stroke-width="4"/>`:`<path d="M180 187 Q200 202 220 187" fill="none" stroke="#8c4e5d" stroke-width="4"/>`;
  const blush=/Shy|Cheerful|Playful/i.test(personality)?'<circle cx="150" cy="190" r="8" fill="#ff8fa3" opacity=".65"/><circle cx="250" cy="190" r="8" fill="#ff8fa3" opacity=".65"/>':'';
- return `<svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="cg${artHash(seed)}" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${bg}"/><stop offset="1" stop-color="${outfit}"/></linearGradient></defs><rect width="320" height="320" rx="24" fill="url(#cg${artHash(seed)})"/><circle cx="250" cy="75" r="70" fill="${hair}" opacity=".12"/>${wings}${horns}${ears}<path d="M65 300 Q160 205 255 300Z" fill="${outfit}" stroke="${hair}" stroke-width="5"/><circle cx="160" cy="145" r="70" fill="#f2c9bd"/><path d="M92 138 Q88 70 160 62 Q232 70 228 138 Q205 98 160 102 Q115 98 92 138Z" fill="${hair}"/><ellipse cx="135" cy="150" rx="9" ry="12" fill="#9cf6ff"/><ellipse cx="185" cy="150" rx="9" ry="12" fill="#9cf6ff"/><circle cx="135" cy="152" r="3"/><circle cx="185" cy="152" r="3"/>${blush}${face}<text x="16" y="28" fill="#fff" font-size="10" font-family="system-ui">CHIBI AUTO ART</text><text x="16" y="284" fill="#fff" font-size="16" font-weight="800" font-family="system-ui">${svgEsc(c.name||"Unnamed")}</text><text x="16" y="304" fill="#d7ddff" font-size="11" font-family="system-ui">${svgEsc(personality)} • ${svgEsc(c.race||"Unknown")}</text></svg>`;
+ return `<svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="cg${artHash(seed)}" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${bg}"/><stop offset="1" stop-color="${outfit}"/></linearGradient></defs><rect width="320" height="320" rx="24" fill="url(#cg${artHash(seed)})"/><circle cx="250" cy="75" r="70" fill="${hair}" opacity=".12"/>${wings}${horns}${ears}<path d="M65 300 Q160 205 255 300Z" fill="${outfit}" stroke="${hair}" stroke-width="5"/><circle cx="160" cy="145" r="70" fill="#f2c9bd"/><path d="M92 138 Q88 70 160 62 Q232 70 228 138 Q205 98 160 102 Q115 98 92 138Z" fill="${hair}"/><ellipse cx="135" cy="150" rx="9" ry="12" fill="#9cf6ff"/><ellipse cx="185" cy="150" rx="9" ry="12" fill="#9cf6ff"/><circle cx="135" cy="152" r="3"/><circle cx="185" cy="152" r="3"/>${blush}${face}<text x="16" y="28" fill="#fff" font-size="10" font-family="system-ui">CHIBI AUTO ART</text><text x="16" y="284" fill="#fff" font-size="16" font-weight="800" font-family="system-ui">${svgEsc(c.name||"Unnamed")}</text><text x="16" y="304" fill="#d7ddff" font-size="11" font-family="system-ui">${svgEsc(personality)} • ${svgEsc(c.nationality||"Not Set")}</text></svg>`;
 }
 function renderTeamGallery(){
  const el=document.getElementById("teamGallery");if(!el)return;
  if(!teams.length){el.innerHTML='<div class="team-gallery-hint">Belum ada team. Cipta team dahulu untuk melihat Team Selection Gallery.</div>';return;}
  const selected=selectedGalleryTeamId?teams.find(t=>String(t.id)===String(selectedGalleryTeamId)):null;
  if(selectedGalleryTeamId&&!selected){selectedGalleryTeamId=null;}
- const cards=teams.map(t=>{const isSelected=selectedGalleryTeamId===String(t.id);const logo=t.logo||teamLogoSVG(t.name);return `<button type="button" class="chibi-card team-select-card ${isSelected?'selected':''}" onclick="selectTeamGallery('${String(t.id).replace(/'/g,"\'")}')" title="${isSelected?'Sembunyikan pemain':'Lihat pemain'} ${esc(t.name)}"><img class="team-select-logo" src="${logo}" alt="${esc(t.name)} logo"><div class="team-select-name">${esc(t.name)}</div><span class="pill">${t.characters.length}/3 Players</span></button>`;}).join('');
+ const cards=teams.slice().sort((a,b)=>teamAchievementPoints(b)-teamAchievementPoints(a)||Number(b.totalWins||0)-Number(a.totalWins||0)).map(t=>{const isSelected=selectedGalleryTeamId===String(t.id);const logo=t.logo||teamLogoSVG(t.name);return `<button type="button" class="chibi-card team-select-card ${isSelected?'selected':''}" onclick="selectTeamGallery('${String(t.id).replace(/'/g,"\'")}')" title="${isSelected?'Sembunyikan pemain':'Lihat pemain'} ${esc(t.name)}"><img class="team-select-logo" src="${logo}" alt="${esc(t.name)} logo"><div class="team-select-name">${esc(t.name)}</div><span class="pill">${Array.isArray(t.characters)?t.characters.length:0}/3 Players</span></button>`;}).join('');
  let players='';
- if(selected){const cs=selected.characters.map(id=>characters.find(c=>c.id===id)).filter(Boolean);players=`<div class="team-select-members">${cs.length?cs.map(c=>`<div class="team-player-card"><div class="chibi">${makeChibi(c)}</div><b>${esc(c.name)}</b><div class="small muted">${esc(c.race)} • ${esc(c.personality||'Brave')}</div></div>`).join(''):'<div class="team-gallery-hint" style="width:100%">Team ini belum mempunyai pemain.</div>'}</div>`;}
+ if(selected){const cs=selected.characters.map(id=>characters.find(c=>c.id===id)).filter(Boolean).sort(comparePlayers);players=`<div class="team-select-members">${cs.length?cs.map(c=>`<div class="team-player-card"><div class="chibi">${makeChibi(c)}</div><b>${esc(c.name)}</b><div class="small muted">${esc(c.nationality||"Not Set")} • ${esc(c.personality||'Brave')}</div></div>`).join(''):'<div class="team-gallery-hint" style="width:100%">Team ini belum mempunyai pemain.</div>'}</div>`;}
  el.innerHTML=cards+players+(selected?'':'<div class="team-gallery-hint">Pilih satu team di atas untuk memaparkan pemain team tersebut.</div>');
 }
 
-function renderLeaderboard(){const el=document.getElementById("playerLeaderboard");if(!el)return;const top=characters.slice().sort((a,b)=>playerPoints(b)-playerPoints(a)||Number(b.totalWins||0)-Number(a.totalWins||0)).slice(0,10);el.innerHTML=top.length?top.map((c,i)=>{const t=teams.find(x=>x.id===c.teamId)||teams.find(x=>x.characters.includes(c.id));return `<div class="leaderboard-row"><div class="leaderboard-rank">#${i+1}</div><div><div>${raceNameHTML(c)}</div><div class="small muted">${esc(c.race)}${t?` • 🛡️ ${esc(t.name)}`:""} • ${Number(c.totalWins||0)} wins</div></div><b>${playerPoints(c)} pts</b></div>`}).join(""):'<div class="empty">No players yet.</div>'}
+function renderLeaderboard(){const el=document.getElementById("playerLeaderboard");if(!el)return;const top=characters.slice().sort(comparePlayers).slice(0,10);el.innerHTML=top.length?top.map((c,i)=>{const t=teams.find(x=>x.id===c.teamId)||teams.find(x=>x.characters.includes(c.id));return `<div class="leaderboard-row"><div class="leaderboard-rank">#${i+1}</div><div><div>${raceNameHTML(c)}</div><div class="small muted">${esc(c.nationality||"Not Set")} • LV ${playerLevel(c)} • ${playerStars(c)}★${t?` • 🛡️ ${esc(t.name)}`:""} • ${Number(c.totalWins||0)} wins • 🏆 ${Number(c.championships||0)} Champion</div></div><b>${playerPoints(c)} pts</b></div>`}).join(""):'<div class="empty">No players yet.</div>'}
 function renderAll(){
  document.getElementById("sChars").textContent=characters.length;
  document.getElementById("sTeams").textContent=teams.length;
