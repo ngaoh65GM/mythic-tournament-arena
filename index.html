@@ -18,7 +18,7 @@ header{padding:22px 28px;border-bottom:1px solid var(--line);background:#090d18c
 h1{margin:0;font-size:26px}.sub{color:var(--muted);margin-top:4px}
 nav{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}.tab,.btn{border:1px solid var(--line);background:var(--panel);color:var(--text);padding:9px 13px;border-radius:9px;cursor:pointer}.tab.active,.btn.primary{background:var(--accent);border-color:var(--accent)}.btn.good{background:#0e594d;border-color:#197b6b}.btn.danger{background:#4b1722;border-color:#7b2535}
 main{max-width:1400px;margin:auto;padding:22px}.page{display:none}.page.active{display:block}.grid{display:grid;gap:16px}.g2{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(3,minmax(0,1fr))}.card{background:linear-gradient(145deg,#12192a,#0e1422);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:0 10px 30px #0004}.card h2,.card h3{margin-top:0}.stat{font-size:25px;font-weight:800}.muted{color:var(--muted)}label{display:block;color:#bdc7db;margin:9px 0 5px}input,select{width:100%;padding:10px;border-radius:8px;border:1px solid var(--line);background:#0a0f1b;color:var(--text);outline:none}input:focus,select:focus{border-color:var(--accent)}.row{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.between{justify-content:space-between}.pill{display:inline-block;padding:3px 8px;border-radius:999px;background:#202941;color:#d8e1f7;font-size:12px}.race{font-size:18px}.player-name{display:inline-flex;align-items:center;gap:5px;font-weight:900}.player-name.tier-1{color:#fff}.player-name.tier-2{color:#5aa7ff}.player-name.tier-3{color:#9b1c28;text-shadow:0 0 7px #ff3b1f}.player-name.tier-4{color:#62ff70;text-shadow:0 0 8px #21ff3b}.player-name.tier-5{background:linear-gradient(90deg,#ff4d6d,#ffd166,#62ffda,#7aa7ff,#d68cff);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:rainbowName 2.5s linear infinite}.name-effect{display:inline-block;min-width:18px}.tier-3 .name-effect{animation:flame 700ms ease-in-out infinite alternate}.tier-4 .name-effect{animation:skullPulse 900ms ease-in-out infinite}.tier-5 .name-effect{animation:wingFloat 900ms ease-in-out infinite alternate}@keyframes rainbowName{to{background-position:300% 0}}@keyframes flame{from{transform:translateY(1px) scale(.95)}to{transform:translateY(-2px) scale(1.12);filter:drop-shadow(0 0 5px #ff5a36)}}@keyframes skullPulse{from{transform:scale(.9);opacity:.7}to{transform:scale(1.15);opacity:1}}@keyframes wingFloat{from{transform:translateY(1px) rotate(-4deg)}to{transform:translateY(-2px) rotate(4deg)}}.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}.team{padding:14px;border:1px solid var(--line);border-radius:11px;background:var(--panel2)}.team.full{opacity:.48}.team-name{font-weight:800}.chars{margin-top:8px;color:#cbd5ea;font-size:12px}.table{width:100%;border-collapse:collapse}.table th,.table td{padding:10px;border-bottom:1px solid var(--line);text-align:left}.table th{color:#aebbd3}.empty{padding:25px;text-align:center;color:var(--muted)}.bracket{display:flex;gap:14px;overflow:auto;padding-bottom:10px}.bracket-stage{min-width:520px}.round-title{text-align:center;color:#d9e1f3;font-weight:900;font-size:17px;margin:4px 0 8px}.bracket-halves{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}.bracket-half{padding:10px;border:1px solid #303b57;border-radius:12px;background:#0b1120aa}.bracket-half-title{text-align:center;font-weight:900;color:#cfd8ed;padding:4px 0 7px;border-bottom:1px solid #29344e;margin-bottom:4px}.bracket-half.lower{margin-top:18px}.final-stage{min-width:300px;display:flex;flex-direction:column;justify-content:center}.final-match{padding:10px;border:1px solid #4b4f75;border-radius:14px;background:linear-gradient(145deg,#151a30,#0d1322)}@media(max-width:760px){.bracket-stage{min-width:430px}.bracket-halves{grid-template-columns:1fr 1fr;gap:8px}.bracket-half{padding:7px}.match{padding:8px}}
-.tour-bracket-wrap{overflow-x:auto;padding:10px 4px 18px}.tour-bracket{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(230px,280px);gap:18px;align-items:stretch;min-width:max-content}.tour-col{display:flex;flex-direction:column;min-height:520px}.tour-col h3{text-align:center;margin:0 0 14px;color:#dce5f7;font-size:16px}.tour-games{display:flex;flex:1;flex-direction:column;justify-content:space-around;gap:14px}.tour-game{position:relative;border:1px solid #34415f;border-radius:12px;background:linear-gradient(145deg,#121a2c,#0c1321);overflow:hidden;box-shadow:0 5px 16px #0003}.tour-game .game-head{padding:7px 10px;border-bottom:1px solid #2a3651;color:#93a2bd;font-size:11px;text-transform:uppercase;letter-spacing:.08em}.tour-slot{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:10px 11px;min-height:43px}.tour-slot+.tour-slot{border-top:1px solid #27334c}.tour-slot.winner{background:#173d36;color:#91f2d7}.tour-slot.bye{color:#7f8ba3;background:#101728}.tour-slot .team-label{font-weight:700;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.tour-slot .slot-action{flex:none}.tour-bye-note{font-size:10px;color:#8b98af}.tour-final .tour-game{border-color:#6c5bb8;background:linear-gradient(145deg,#1a1832,#0d1322)}.tour-empty{padding:50px 20px;text-align:center;color:#7f8ba3}.tour-bracket-legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:#9aa7bd;margin-top:8px}
+.tour-bracket-wrap{overflow-x:auto;padding:10px 4px 18px}.tour-bracket{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(230px,280px);gap:18px;align-items:stretch;min-width:max-content}.tour-col{display:flex;flex-direction:column;min-height:520px}.tour-col h3{text-align:center;margin:0 0 14px;color:#dce5f7;font-size:16px}.tour-games{display:flex;flex:1;flex-direction:column;justify-content:space-around;gap:14px}.tour-game{position:relative;border:1px solid #34415f;border-radius:12px;background:linear-gradient(145deg,#121a2c,#0c1321);overflow:hidden;box-shadow:0 5px 16px #0003}.tour-game .game-head{padding:7px 10px;border-bottom:1px solid #2a3651;color:#93a2bd;font-size:11px;text-transform:uppercase;letter-spacing:.08em}.tour-slot{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:10px 11px;min-height:43px}.tour-slot+.tour-slot{border-top:1px solid #27334c}.tour-slot.winner{background:#173d36;color:#91f2d7}.tour-slot.bye{color:#7f8ba3;background:#101728}.tour-slot .team-label{font-weight:700;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.tour-slot .slot-action{flex:none}.tour-team-logo{width:34px;height:34px;border-radius:8px;border:1px solid #58658a;object-fit:cover;background:#090f1b;flex:none}.tour-slot .team-label{display:flex;align-items:center;gap:8px}.tour-slot .team-label img{width:34px;height:34px}.tour-bye-note{font-size:10px;color:#8b98af}.tour-final .tour-game{border-color:#6c5bb8;background:linear-gradient(145deg,#1a1832,#0d1322)}.tour-empty{padding:50px 20px;text-align:center;color:#7f8ba3}.tour-bracket-legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:#9aa7bd;margin-top:8px}
 .round{min-width:240px}.round h3{text-align:center;color:#cdd7ed}.match{background:var(--panel);border:1px solid var(--line);border-radius:11px;margin:10px 0;padding:10px}.side{display:flex;justify-content:space-between;padding:7px;border-radius:7px}.side.winner{background:#193c36;color:#8ff0d5}.side button{padding:2px 7px}.small{font-size:12px}.notice{padding:11px;border-radius:9px;background:#151f34;color:#c8d4ec;border:1px solid var(--line);margin-bottom:12px}.danger-text{color:#ff8192}.success{color:#65e0c4}.modal{position:fixed;inset:0;background:#0009;display:none;align-items:center;justify-content:center;padding:20px;z-index:20}.modal.show{display:flex}.modalbox{width:min(850px,100%);max-height:90vh;overflow:auto;background:#0d1422;border:1px solid var(--line);border-radius:15px;padding:20px}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 12px}.fullcol{grid-column:1/-1}.race-list{max-height:260px;overflow:auto;border:1px solid var(--line);border-radius:9px;margin-top:6px}.race-option{padding:9px 11px;border-bottom:1px solid var(--line);cursor:pointer}.race-option:hover{background:#192137}.race-option:last-child{border:0}.kbd{font-family:monospace;background:#0a0e17;border:1px solid var(--line);padding:2px 5px;border-radius:4px}
 
 /* === Anime Fantasy UI Theme === */
@@ -38,7 +38,7 @@ main{max-width:1400px;margin:auto;padding:22px}.page{display:none}.page.active{d
 .venue{margin-top:18px;padding:13px 16px;border:1px solid #303b57;border-radius:12px;background:#0b1120cc}
 .team-stage{margin-top:14px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
 .chibi-card{min-height:145px;border:1px solid #303a56;border-radius:14px;padding:13px;text-align:center;background:linear-gradient(160deg,#171e30,#0d1320);transition:.25s;position:relative;overflow:hidden}
-.chibi-card:hover{transform:translateY(-4px);border-color:#7666df}
+.chibi-card:hover{transform:translateY(-4px);border-color:#7666df}.team-select-card{cursor:pointer;min-height:112px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}.team-select-card.selected{border-color:#8b7cff;box-shadow:0 0 0 2px #8b7cff44,0 10px 28px #0006;background:linear-gradient(160deg,#1b2140,#10172a)}.team-select-logo{width:64px;height:64px;border-radius:14px;border:1px solid #64709a;object-fit:cover;background:#0a1020;box-shadow:0 8px 18px #0006}.team-select-name{font-weight:900;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.team-select-members{grid-column:1/-1;display:flex;gap:10px;overflow-x:auto;padding:4px 2px 8px;scrollbar-width:thin}.team-player-card{flex:0 0 145px;border:1px solid #303a56;border-radius:12px;padding:9px;text-align:center;background:linear-gradient(160deg,#141c30,#0c1320)}.team-player-card .chibi{height:110px}.team-player-card .chibi svg{max-height:110px}.team-gallery-hint{grid-column:1/-1;padding:18px;text-align:center;border:1px dashed #35415e;border-radius:12px;color:#8f9bb3}
 .chibi{font-size:58px;line-height:1;margin:7px 0;min-height:105px}.chibi svg{width:100%;height:105px;display:block}
 .location-chip{display:inline-flex;align-items:center;gap:6px;padding:5px 9px;border-radius:999px;background:#202940;color:#cbd7ef;font-size:12px}
 .section-kicker{text-transform:uppercase;letter-spacing:1.5px;color:#8d9bc0;font-size:11px;font-weight:800}
@@ -77,7 +77,6 @@ main{max-width:1400px;margin:auto;padding:22px}.page{display:none}.page.active{d
     <button class="tab" data-page="teams">Teams</button>
     <button class="tab" data-page="tournament">Tournament</button>
     <button class="tab" data-page="tourbracket">🏆 Tour Bracket</button>
-    <button class="tab" data-page="races">Race Database</button>
   </nav>
 </header>
 
@@ -121,18 +120,7 @@ main{max-width:1400px;margin:auto;padding:22px}.page{display:none}.page.active{d
   </div>
 
   <div class="card" style="margin-top:16px">
-    <div class="row between">
-      <div><h2 style="margin-bottom:3px">✨ Team Selection Gallery</h2><div class="muted">Chibi mascots change when the team selection location changes.</div></div>
-      <select id="teamVenue" onchange="renderTeamGallery()" style="max-width:230px">
-        <option value="academy">🏫 Magic Academy</option>
-        <option value="village">🏡 Beastkin Village</option>
-        <option value="castle">🏰 Demon Castle</option>
-        <option value="forest">🌲 Enchanted Forest</option>
-        <option value="sky">☁️ Celestial Sky</option>
-        <option value="void">🌌 Void Gate</option>
-      </select>
-    </div>
-    <div id="teamVenueText" class="venue"></div>
+    <div class="row between"><div><h2 style="margin-bottom:3px">✨ Team Selection Gallery</h2><div class="muted">Tekan logo team untuk melihat pemain dalam team tersebut. Pemain lain kekal tersembunyi sehingga team dipilih.</div></div></div>
     <div id="teamGallery" class="team-stage"></div>
   </div>
 
@@ -195,10 +183,7 @@ main{max-width:1400px;margin:auto;padding:22px}.page{display:none}.page.active{d
   </div>
 </section>
 
-<section id="races" class="page">
-  <div class="row between"><div><h2>Race Database</h2><div class="muted">Race selection can automatically fill the suggested character stats.</div></div><span class="pill" id="raceCount"></span></div>
-  <div class="card" style="margin-top:14px;overflow:auto"><table class="table"><thead><tr><th>Race</th><th>Rank Tier</th><th>Power Type</th><th>Mana</th><th>Speed</th><th>Traits</th><th>Weakness</th></tr></thead><tbody id="raceTable"></tbody></table></div>
-</section>
+
 </main>
 
 
@@ -745,17 +730,18 @@ function renderBracket(){
  const html=`<div class="tour-bracket">${cols}</div><div class="tour-bracket-legend"><span>🟩 Winner</span><span>↗ BYE = auto advance, no points</span><span>🏆 Final = tournament champion</span></div>`;
  targets.forEach(b=>b.innerHTML=html);
  const champ=tournamentChampion();
- const sm=document.getElementById('tourBracketSummary');if(sm)sm.innerHTML=champ?`Champion: <b>${esc(teamName(champ))}</b>`:`${n}-Team Single Elimination • ${rounds[0].length} first-round slots`;
+ const sm=document.getElementById('tourBracketSummary');
+ if(sm){if(champ){const ct=teams.find(t=>String(t.id)===String(champ));const logo=ct?.logo||teamLogoSVG(ct?.name||'Team');sm.innerHTML=`Champion: <img class="tour-team-logo" style="vertical-align:middle;margin-left:6px" src="${logo}" alt="Champion team logo">`;}else sm.innerHTML=`${n}-Team Single Elimination • ${rounds[0].length} first-round slots`;}
 }
 function renderTourGame(m,ri,mi){
  const bye=m.winner&&((m.a&&!m.b)||(m.b&&!m.a));
- const slot=(id,side)=>{
+ const logoFor=id=>{const t=teams.find(x=>String(x.id)===String(id));return t?.logo||teamLogoSVG(t?.name||"Team")};
+ const slot=(id)=>{
    if(!id)return `<div class="tour-slot bye"><span class="team-label">BYE</span><span class="tour-bye-note">Waiting</span></div>`;
-   const won=m.winner===id;
-   const can=!m.winner&&m.a!==null&&m.b!==null;
-   return `<div class="tour-slot ${won?'winner':''}"><span class="team-label">${esc(teamName(id))}</span><span class="slot-action">${can?`<button class="btn small good" onclick="recordWinner(${ri},${mi},'${String(id).replace(/'/g,"\\'")}')">Win</button>`:won?'✓':''}</span></div>`;
+   const won=m.winner===id; const can=!m.winner&&m.a!==null&&m.b!==null; const logo=logoFor(id); const label=esc(teamName(id));
+   return `<div class="tour-slot ${won?'winner':''}"><span class="team-label" title="${label}"><img class="tour-team-logo" src="${logo}" alt="${label} logo"></span><span class="slot-action">${can?`<button class="btn small good" onclick="recordWinner(${ri},${mi},'${String(id).replace(/'/g,"\'")}')">Win</button>`:won?'✓':''}</span></div>`;
  };
- return `<div class="tour-game"><div class="game-head">GAME ${gameNumberForRound(ri,mi)}</div>${slot(m.a,'a')}${slot(m.b,'b')}${bye?`<div style="padding:6px 11px 9px" class="tour-bye-note">↗ BYE — ${esc(teamName(m.winner))} advances</div>`:''}</div>`;
+ return `<div class="tour-game"><div class="game-head">GAME ${gameNumberForRound(ri,mi)}</div>${slot(m.a)}${slot(m.b)}${bye?`<div style="padding:6px 11px 9px" class="tour-bye-note">↗ BYE — logo team advances</div>`:''}</div>`;
 }
 function gameNumberForRound(ri,mi){return tournament?.rounds?.slice(0,ri).reduce((n,r)=>n+r.length,0)+mi+1;}
 
@@ -765,19 +751,8 @@ function renderStandings(){
  const ids=tournament.teamIds.slice().sort((a,b)=>(tournament.points[b]||0)-(tournament.points[a]||0));
  s.innerHTML='<table class="table"><thead><tr><th>#</th><th>Team</th><th>Wins</th><th>Points</th></tr></thead><tbody>'+ids.map((id,i)=>`<tr><td>${i+1}</td><td>${esc(teamName(id))}</td><td>${tournament.wins[id]||0}</td><td><b>${tournament.points[id]||0}</b></td></tr>`).join("")+'</tbody></table>';
 }
-function renderRaces(){
- document.getElementById("raceCount").textContent=`${races.length} races`;
- document.getElementById("raceTable").innerHTML=races.map(r=>`<tr><td class="race">${esc(r[0])}</td><td>${esc(r[1])}</td><td>${esc(r[2])}</td><td>${esc(r[3])}</td><td>${esc(r[4])}</td><td>${esc(r[5])}</td><td>${esc(r[6])}</td></tr>`).join("");
-}
-
-const venues = {
- academy:{name:"Magic Academy",desc:"A cheerful academy plaza where young mages, beastkin and adventurers gather before battle.",chars:["🧙‍♀️","🐱","🧚","🧙‍♂️","🐰","🦊"]},
- village:{name:"Beastkin Village",desc:"A cozy village full of tiny beastkin mascots, market stalls and playful training matches.",chars:["🐺","🐱","🐰","🦊","🐾","🐶"]},
- castle:{name:"Demon Castle",desc:"A dramatic crimson castle courtyard guarded by cute chibi demons and tiny dragon servants.",chars:["😈","👿","🐉","🦇","🔥","🗿"]},
- forest:{name:"Enchanted Forest",desc:"A glowing forest clearing where fairies, dryads and rabbitkin prepare their teams.",chars:["🧚","🌳","🐰","🦌","🦊","🌿"]},
- sky:{name:"Celestial Sky",desc:"A floating arena above the clouds, surrounded by tiny angels and celestial familiars.",chars:["🪽","✨","👼","☁️","🐦","🌟"]},
- void:{name:"Void Gate",desc:"A mysterious cosmic gate where shadowborn, spirits and voidborn mascots appear.",chars:["🌑","👻","🌌","🖤","👾","🌀"]}
-};
+let selectedGalleryTeamId=null;
+function selectTeamGallery(teamId){selectedGalleryTeamId=selectedGalleryTeamId===String(teamId)?null:String(teamId);renderTeamGallery();}
 function makeChibi(c){
  const personality=c.personality||"Brave";
  const seed=[c.id||"",c.name,c.gender,c.race,c.weapon,personality].join("|");
@@ -794,15 +769,14 @@ function makeChibi(c){
  return `<svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="cg${artHash(seed)}" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${bg}"/><stop offset="1" stop-color="${outfit}"/></linearGradient></defs><rect width="320" height="320" rx="24" fill="url(#cg${artHash(seed)})"/><circle cx="250" cy="75" r="70" fill="${hair}" opacity=".12"/>${wings}${horns}${ears}<path d="M65 300 Q160 205 255 300Z" fill="${outfit}" stroke="${hair}" stroke-width="5"/><circle cx="160" cy="145" r="70" fill="#f2c9bd"/><path d="M92 138 Q88 70 160 62 Q232 70 228 138 Q205 98 160 102 Q115 98 92 138Z" fill="${hair}"/><ellipse cx="135" cy="150" rx="9" ry="12" fill="#9cf6ff"/><ellipse cx="185" cy="150" rx="9" ry="12" fill="#9cf6ff"/><circle cx="135" cy="152" r="3"/><circle cx="185" cy="152" r="3"/>${blush}${face}<text x="16" y="28" fill="#fff" font-size="10" font-family="system-ui">CHIBI AUTO ART</text><text x="16" y="284" fill="#fff" font-size="16" font-weight="800" font-family="system-ui">${svgEsc(c.name||"Unnamed")}</text><text x="16" y="304" fill="#d7ddff" font-size="11" font-family="system-ui">${svgEsc(personality)} • ${svgEsc(c.race||"Unknown")}</text></svg>`;
 }
 function renderTeamGallery(){
- const sel=document.getElementById("teamVenue"); if(!sel)return;
- const v=venues[sel.value]||venues.academy;
- document.getElementById("teamVenueText").innerHTML=`<span class="location-chip">📍 ${v.name}</span> &nbsp; ${v.desc}`;
- const teamChars=teams.flatMap(t=>t.characters.map(id=>{const c=characters.find(x=>x.id===id);return c?{c,t}:null}).filter(Boolean));
- if(teamChars.length){
-   document.getElementById("teamGallery").innerHTML=teamChars.map(({c,t})=>`<div class="chibi-card"><div class="chibi">${makeChibi(c)}</div><b>${esc(c.name)}</b><div class="small muted">${esc(t.name)} • ${esc(c.personality||"Brave")} • ${esc(c.race)}</div></div>`).join("");
- }else{
-   document.getElementById("teamGallery").innerHTML=v.chars.map((ch,i)=>`<div class="chibi-card"><div class="chibi">${ch}</div><b>Chibi ${["Leader","Mage","Scout","Guardian","Support","Mascot"][i]}</b><div class="small muted">Team selection area</div></div>`).join("");
- }
+ const el=document.getElementById("teamGallery");if(!el)return;
+ if(!teams.length){el.innerHTML='<div class="team-gallery-hint">Belum ada team. Cipta team dahulu untuk melihat Team Selection Gallery.</div>';return;}
+ const selected=selectedGalleryTeamId?teams.find(t=>String(t.id)===String(selectedGalleryTeamId)):null;
+ if(selectedGalleryTeamId&&!selected){selectedGalleryTeamId=null;}
+ const cards=teams.map(t=>{const isSelected=selectedGalleryTeamId===String(t.id);const logo=t.logo||teamLogoSVG(t.name);return `<button type="button" class="chibi-card team-select-card ${isSelected?'selected':''}" onclick="selectTeamGallery('${String(t.id).replace(/'/g,"\'")}')" title="${isSelected?'Sembunyikan pemain':'Lihat pemain'} ${esc(t.name)}"><img class="team-select-logo" src="${logo}" alt="${esc(t.name)} logo"><div class="team-select-name">${esc(t.name)}</div><span class="pill">${t.characters.length}/3 Players</span></button>`;}).join('');
+ let players='';
+ if(selected){const cs=selected.characters.map(id=>characters.find(c=>c.id===id)).filter(Boolean);players=`<div class="team-select-members">${cs.length?cs.map(c=>`<div class="team-player-card"><div class="chibi">${makeChibi(c)}</div><b>${esc(c.name)}</b><div class="small muted">${esc(c.race)} • ${esc(c.personality||'Brave')}</div></div>`).join(''):'<div class="team-gallery-hint" style="width:100%">Team ini belum mempunyai pemain.</div>'}</div>`;}
+ el.innerHTML=cards+players+(selected?'':'<div class="team-gallery-hint">Pilih satu team di atas untuk memaparkan pemain team tersebut.</div>');
 }
 
 function renderLeaderboard(){const el=document.getElementById("playerLeaderboard");if(!el)return;const top=characters.slice().sort((a,b)=>playerPoints(b)-playerPoints(a)||Number(b.totalWins||0)-Number(a.totalWins||0)).slice(0,10);el.innerHTML=top.length?top.map((c,i)=>{const t=teams.find(x=>x.id===c.teamId)||teams.find(x=>x.characters.includes(c.id));return `<div class="leaderboard-row"><div class="leaderboard-rank">#${i+1}</div><div><div>${raceNameHTML(c)}</div><div class="small muted">${esc(c.race)}${t?` • 🛡️ ${esc(t.name)}`:""} • ${Number(c.totalWins||0)} wins</div></div><b>${playerPoints(c)} pts</b></div>`}).join(""):'<div class="empty">No players yet.</div>'}
@@ -810,7 +784,7 @@ function renderAll(){
  document.getElementById("sChars").textContent=characters.length;
  document.getElementById("sTeams").textContent=teams.length;
  document.getElementById("sTourTeams").textContent=tournament?.teamIds?.length||0;
- renderChars();renderCharacterGallery();renderTeams();renderBracket();renderStandings();renderRaces();renderTeamGallery();renderLeaderboard();
+ renderChars();renderCharacterGallery();renderTeams();renderBracket();renderStandings();renderTeamGallery();renderLeaderboard();
 }
 renderAll();
 updateTournamentPicker();
